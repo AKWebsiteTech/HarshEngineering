@@ -1,6 +1,6 @@
 /* Global CSS Starts Here*/
-@import url('https://fonts.googleapis.com/css2?family=Lato');
-@import url('https://fonts.googleapis.com/css2?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
 * {
     margin: 0;
@@ -16,12 +16,12 @@ body {
 :root {
     --primary-color: #017AD6;
     --secondary-color: #00101E;
-    --third-color: #E6F2E4;
+    --third-color: #ff5317;
     --fourth-color: #ffffff;
     --fifth-color: #141414;
     /*fonts*/
-    --primary-font: Inter;
-    --secondary-font: Lato;
+    --primary-font: Montserrat;
+    --secondary-font: Roboto;
 }
 
 .row {
@@ -100,8 +100,8 @@ li {
 
 button {
     border: 0;
-    background: var(--primary-color);
-    padding: 5px 15px;
+    background: var(--third-color);
+    padding: 15px 20px;
     border-radius: 0;
     color: var(--fourth-color);
     font-weight: 700;

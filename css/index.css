@@ -135,7 +135,7 @@ form {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    
+
     i {
         box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.1);
         font-size: 35px;
@@ -144,5 +144,64 @@ form {
         background-color: #01BF01;
         padding: 15px 18px;
         color: var(--fourth-color);
+    }
+}
+
+.banner {
+    background-image: linear-gradient(to right, rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url(/images/home-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+
+    .contactrow {
+        top: 0;
+        left: 0;
+        background-color: rgba(20, 20, 20, 0.6);
+        text-align: center;
+        border-top: 1px solid var(--primary-color);
+        padding-block: 15px;
+
+        p {
+            font-size: 20px;
+            color: var(--fourth-color);
+        }
+    }
+
+    .intropara {
+        color: var(--fourth-color);
+        font-size: 21px;
+    }
+
+    h1 {
+        border-bottom: 1.5px solid var(--primary-color);
+        width: fit-content;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+}
+
+.experties {
+    text-align: center;
+
+    .grid {
+        margin-block: 15px;
+        
+        div {
+            box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.1);
+            background-color: #eee;
+            padding: 25px;
+            border-radius: 15px;
+        }
+    }
+}
+
+.steps {
+    i {
+        border: 1px solid var(--third-color);
+        border-radius: 100px;
+        padding: 15px 20px;
+        background-color: #eee;
     }
 }
