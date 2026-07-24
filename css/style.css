@@ -27,7 +27,7 @@ body {
 .row {
     width: 90%;
     margin: auto;
-    padding: 75px 20px;
+    padding: 80px 20px;
     background-color: transparent;
 }
 
@@ -131,19 +131,21 @@ button:hover {
 
 .grid {
     display: grid;
-    gap: 25px;
 }
 
 .grid1 {
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
 
 .grid2 {
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .grid3 {
     grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
 
 #off,

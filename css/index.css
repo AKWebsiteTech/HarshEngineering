@@ -117,7 +117,7 @@ form {
     }
 }
 
-.mainfooter {
+footer {
     background-color: #eee;
 
     .foot {
@@ -187,13 +187,127 @@ form {
 
     .grid {
         margin-block: 15px;
-        
+
         div {
+            cursor: pointer;
+            padding: 25px;
+        }
+
+        div:hover {
             box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.1);
             background-color: #eee;
-            padding: 25px;
             border-radius: 15px;
         }
+
+        i {
+            background: linear-gradient(45deg, var(--primary-color), var(--third-color));
+            padding: 15px;
+            border-radius: 10px;
+            color: var(--fourth-color);
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.Habout {
+    img {
+        width: 100%;
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+        border-radius: 10px;
+    }
+
+    .column {
+        margin: auto 0;
+    }
+
+    .row {
+        padding-top: 0;
+    }
+
+    h2 {
+        border-bottom: 2px solid var(--primary-color);
+        width: fit-content;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.reason {
+    background-image: linear-gradient(to right, rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url(../images/turning-machine.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2,
+    h3,
+    p {
+        color: var(--fourth-color);
+    }
+
+    .column {
+        text-align: center;
+    }
+
+    hr {
+        border-color: var(--third-color);
+        width: 175px;
+        margin: auto;
+        border-radius: 10px;
+        border: 2px solid var(--third-color);
+    }
+
+    .slider-container1 {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .slider1 {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        margin-top: 15px;
+        padding: 5px;
+    }
+    
+    .slide1 {
+        min-width: 100%;
+        box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(20, 20, 20, 0.5);
+        text-align: center;
+    }
+
+    .prev-btn1,
+    .next-btn1 {
+        background-color: rgba(255, 83, 23, 0.6);
+        color: white;
+        border: none;
+        padding: 5px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: fit-content;
+        z-index: 99;
+    }
+
+    .disabled {
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+}
+
+.offers {
+    h3 {
+        border: 1px solid var(--third-color);
+        border-radius: 10px;
+    }
+
+    span {}
+
+    i {
+        background-color: var(--primary-color);
+        border-radius: 10px 0 0 10px;
+        padding: 10px;
     }
 }
 
