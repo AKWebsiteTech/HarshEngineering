@@ -148,7 +148,7 @@ footer {
 }
 
 .banner {
-    background-image: linear-gradient(to right, rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url(/images/home-banner.jpg);
+    background-image: linear-gradient(to right, rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url(../images/home-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -339,6 +339,33 @@ footer {
     }
 
     .row {
-        padding-top: 0;
+        padding-block: 0;
     }
+}
+
+.Serve {
+    h3 {
+        flex: 1;
+        margin: auto;
+    }
+
+    .flex {
+        background: linear-gradient(-75deg, rgb(255, 99, 71, 0.3) 50%, rgb(1, 191, 1, 0.3) 50%);
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .flex:nth-child(2),
+    .flex:nth-child(3) {
+        background: linear-gradient(75deg, rgb(255, 99, 71, 0.3) 50%, rgb(1, 191, 1, 0.3) 50%);
+    }
+}
+
+.getintouch {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../images/Hexagon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-block: 2px solid var(--primary-color);
 }
