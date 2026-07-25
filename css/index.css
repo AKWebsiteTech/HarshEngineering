@@ -237,15 +237,11 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
 
     h2,
-    h3,
     p {
         color: var(--fourth-color);
-    }
-
-    .column {
-        text-align: center;
     }
 
     hr {
@@ -255,26 +251,59 @@ footer {
         border-radius: 10px;
         border: 2px solid var(--third-color);
     }
+}
+
+.offers {
+
+    .flex h2 {
+        flex: 1;
+    }
 
     .slider-container1 {
         position: relative;
         overflow: hidden;
     }
-    
+
     .slider1 {
         display: flex;
         transition: transform 0.5s ease-in-out;
         margin-top: 15px;
         padding: 5px;
+        gap: 15px;
     }
-    
+
     .slide1 {
-        min-width: 100%;
-        box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.1);
+        min-width: 32.3%;
         padding: 20px;
         border-radius: 10px;
-        background-color: rgba(20, 20, 20, 0.5);
         text-align: center;
+
+        i {
+            font-size: 25px;
+            margin-bottom: 15px;
+            background-color: var(--primary-color);
+            color: var(--fourth-color);
+            padding: 15px;
+            border-radius: 5px;
+        }
+    }
+
+    .slide1:nth-child(1),
+    .slide1:nth-child(4),
+    .slide1:nth-child(7) {
+        background-color: #ffdbdf;
+    }
+
+    .slide1:nth-child(2),
+    .slide1:nth-child(5),
+    .slide1:nth-child(8) {
+        background-color: #e0f2f4;
+    }
+
+    .slide1:nth-child(3),
+    .slide1:nth-child(6),
+    .slide1:nth-child(9) {
+        background-color: #ffe797;
     }
 
     .prev-btn1,
@@ -296,26 +325,20 @@ footer {
     }
 }
 
-.offers {
-    h3 {
-        border: 1px solid var(--third-color);
-        border-radius: 10px;
-    }
-
-    span {}
-
-    i {
-        background-color: var(--primary-color);
-        border-radius: 10px 0 0 10px;
-        padding: 10px;
-    }
-}
-
 .steps {
     i {
         border: 1px solid var(--third-color);
         border-radius: 100px;
         padding: 15px 20px;
         background-color: #eee;
+    }
+
+    .grid div {
+        border-radius: 10px;
+        padding: 17px;
+    }
+
+    .row {
+        padding-top: 0;
     }
 }
