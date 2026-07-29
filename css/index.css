@@ -369,3 +369,67 @@ footer {
     background-size: cover;
     border-block: 2px solid var(--primary-color);
 }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid white;
+
+    .row {
+        padding-block: 15px;
+        gap: 15px;
+    }
+
+    .logocol {
+        margin: auto 0 !important;
+        border-radius: 10px;
+        padding: 13px;
+        background-color: var(--fourth-color);
+        width: fit-content;
+
+        a {
+            line-height: 0;
+        }
+    }
+
+    img {
+        width: 150px;
+    }
+
+    #bars {
+        display: none;
+        margin: auto 0 !important;
+        background-color: var(--fourth-color);
+        padding: 12px 13px;
+        border-radius: 10px;
+        font-size: 22px;
+    }
+
+    nav {
+        flex: 1;
+        margin: auto 0;
+    }
+
+    ul {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        a {
+            color: var(--fourth-color);
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            padding: 2px 5px 5px 5px;
+        }
+    }
+
+    nav ul li a.active, a:hover {
+        color: var(--third-color) !important;
+        border-color: var(--third-color);
+    }
+}

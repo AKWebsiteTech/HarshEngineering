@@ -19,7 +19,7 @@ function mufun() {
 }
 
 const currentPath = window.location.pathname;
-const navLinks = document.querySelectorAll(".navigate nav ul li a");
+const navLinks = document.querySelectorAll("nav ul li a");
 navLinks.forEach(link => {
   const linkPath = new URL(link.href).pathname;
   if (linkPath === currentPath) {
@@ -27,18 +27,3 @@ navLinks.forEach(link => {
   }
 });
 
-document.querySelectorAll('.faqhead').forEach(head => {
-  head.addEventListener('click', () => {
-    const detail = head.nextElementSibling;
-    const plusIcon = head.querySelector('.fa-angle-down');
-    const minusIcon = head.querySelector('.fa-angle-up');
-    detail.classList.toggle('show');
-    if (detail.classList.contains('show')) {
-      plusIcon.style.display = 'none';
-      minusIcon.style.display = 'inline';
-    } else {
-      plusIcon.style.display = 'inline';
-      minusIcon.style.display = 'none'; 
-    }
-  });
-});
