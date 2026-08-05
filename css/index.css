@@ -1,80 +1,5 @@
 @import url(./style.css);
 
-.newheader {
-    background: var(--fourth-color);
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    right: 0;
-    left: 0;
-    box-shadow: 0 3px 3px rgba(20, 20, 20, 0.1);
-
-    .newhead {
-        width: 90%;
-        margin: auto;
-        border: 0;
-        padding: 10px 20px;
-        border-radius: 100px;
-    }
-
-    .left {
-        margin: auto 0;
-        max-width: fit-content;
-
-        p {
-            font-size: 30px;
-            line-height: 1;
-            font-weight: 700;
-        }
-    }
-
-    .right {
-        margin: auto 0;
-    }
-
-    .headcol {
-        margin: auto 0;
-    }
-}
-
-.navigate {
-    margin: auto 0;
-
-    ul {
-        display: flex;
-        list-style-type: none;
-        gap: 10px;
-        margin-bottom: 0;
-        background-color: transparent;
-        justify-content: center;
-    }
-
-    nav ul li a.active {
-        border-color: var(--primary-color) !important;
-        color: var(--primary-color) !important;
-    }
-
-    a {
-        color: var(--fifth-color) !important;
-        transition: border-color 0.5s ease-in-out;
-        padding: 5px 10px;
-        border-bottom: 2px solid transparent;
-    }
-
-    li {
-        background-color: transparent;
-        margin: 0;
-        padding: 0 5px;
-        cursor: pointer;
-    }
-
-    li:hover {
-        a {
-            color: var(--primary-color) !important;
-        }
-    }
-}
-
 form {
     ::placeholder {
         color: #676767;
@@ -376,6 +301,7 @@ header {
     left: 0;
     right: 0;
     border-bottom: 1px solid white;
+    z-index: 9;
 
     .row {
         padding-block: 15px;
@@ -432,4 +358,8 @@ header {
         color: var(--third-color) !important;
         border-color: var(--third-color);
     }
+}
+
+header.scrolled {
+    background-color: var(--fifth-color);
 }
