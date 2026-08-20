@@ -77,33 +77,38 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    display: flex;
-
-    .contactrow {
-        top: 0;
-        left: 0;
-        background-color: rgba(20, 20, 20, 0.6);
-        text-align: center;
-        border-top: 1px solid var(--primary-color);
-        padding-block: 15px;
-
-        p {
-            font-size: 20px;
-            color: var(--fourth-color);
-        }
-    }
 
     .intropara {
-        color: var(--fourth-color);
-        font-size: 21px;
+        font-size: 20px;
+        letter-spacing: 5px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--third-color);
+        border-bottom: 1px solid var(--fourth-color);
+        width: fit-content;
+        line-height: 1.5;
+        padding-bottom: 5px;
+        text-shadow: 0 3px 3px rgba(255, 255, 255, 0.2);
     }
 
-    h1 {
-        border-bottom: 1.5px solid var(--primary-color);
-        width: fit-content;
-        margin-bottom: 15px;
-        padding-bottom: 10px;
+    .flex {
+        background-color: rgba(255, 255, 255, 0.2);
+        
+        p {
+            font-weight: 700;
+            color: var(--fourth-color);
+            font-size: 20px;
+            padding: 15px;
+            font-family: var(--primary-font);
+            line-height: 1.5;
+        }
+
+        i {
+            background-color: var(--third-color);
+            padding: 15px;
+            color: var(--fourth-color);
+            font-size: 30px;
+        }
     }
 }
 
@@ -112,15 +117,15 @@ footer {
 
     .grid {
         margin-block: 15px;
-
+        
         div {
+            background-color: #eee;
             cursor: pointer;
             padding: 25px;
         }
 
         div:hover {
             box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.1);
-            background-color: #eee;
             border-radius: 15px;
         }
 
@@ -296,11 +301,11 @@ footer {
 }
 
 header {
-    position: fixed;
+    background-color: var(--fourth-color);
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    border-bottom: 1px solid white;
     z-index: 9;
 
     .row {
@@ -310,9 +315,6 @@ header {
 
     .logocol {
         margin: auto 0 !important;
-        border-radius: 10px;
-        padding: 13px;
-        background-color: var(--fourth-color);
         width: fit-content;
 
         a {
@@ -321,7 +323,7 @@ header {
     }
 
     img {
-        width: 150px;
+        width: 175px;
     }
 
     #bars {
@@ -355,8 +357,8 @@ header {
     }
 
     nav ul li a.active, a:hover {
-        color: var(--third-color) !important;
-        border-color: var(--third-color);
+        color: var(--fourth-color) !important;
+        border-color: var(--fourth-color);
     }
 }
 
