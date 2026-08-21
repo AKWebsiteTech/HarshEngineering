@@ -148,7 +148,6 @@ button:hover {
     gap: 15px;
 }
 
-#off,
-#on {
+#off {
     display: none;
 }

@@ -1,8 +1,8 @@
 setInterval(mufun, 1000);
 function mufun() {
-  let b1 = document.getElementById("on");
+  let b1 = document.getElementById("bars");
   let b2 = document.getElementById("off");
-  let view = document.getElementById("view");
+  let view = document.getElementById("nav");
 
   b1.addEventListener("click", function () {
     if ((view.style.display = "none")) {

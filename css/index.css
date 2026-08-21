@@ -31,44 +31,65 @@ form {
     }
 }
 
-.contentonly {
-    li {
-        line-height: 1.5;
-        margin-left: 40px;
-    }
+header {
+    background-color: var(--fourth-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
 
-    hr {
-        margin-block: 10px;
-    }
-}
-
-footer {
-    background-color: #eee;
-
-    .foot {
-        background-color: var(--fifth-color);
-        text-align: center;
+    .row {
         padding-block: 15px;
+        gap: 15px;
+    }
 
-        p {
-            color: #fff;
+    .logocol {
+        margin: auto 0 !important;
+        width: fit-content;
+
+        a {
+            line-height: 0;
         }
     }
-}
 
-.floatwp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    img {
+        width: 175px;
+    }
 
-    i {
-        box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.1);
-        font-size: 35px;
-        padding: 5px;
-        border-radius: 100%;
-        background-color: #01BF01;
-        padding: 15px 18px;
-        color: var(--fourth-color);
+    #bars {
+        display: none;
+        margin: auto 0 !important;
+        background-color: var(--fifth-color);
+        padding: 12px 13px;
+        border-radius: 10px;
+        font-size: 22px;
+        color: #fff;
+    }
+
+    nav {
+        flex: 1;
+        margin: auto 0;
+    }
+
+    ul {
+        justify-content: end;
+        gap: 10px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        a {
+            color: var(--fifth-color);
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            padding: 2px 5px 5px 5px;
+        }
+    }
+
+    nav ul li a.active, a:hover {
+        color: var(--third-color) !important;
+        border-color: var(--third-color);
     }
 }
 
@@ -112,38 +133,114 @@ footer {
     }
 }
 
+.HE {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--third-color);
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.introrow {
+    .flex {
+        gap: 10px;
+    }
+
+    hr {
+        flex: 1;
+        margin: auto 0;
+        border-color: var(--third-color);
+    }
+}
+
 .experties {
-    text-align: center;
+    .row {
+        padding-top: 0;
+    }
 
-    .grid {
-        margin-block: 15px;
-        
-        div {
-            background-color: #eee;
-            cursor: pointer;
-            padding: 25px;
-        }
+    .imgcol {
+        background-image: url(../images/CNC-turning-machine.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-        div:hover {
-            box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.1);
-            border-radius: 15px;
-        }
+    i {
+        font-size: 2em;
+        padding-right: 20px;
+        border-right: 2px solid;
+    }
+}
 
-        i {
-            background: linear-gradient(45deg, var(--primary-color), var(--third-color));
-            padding: 15px;
-            border-radius: 10px;
-            color: var(--fourth-color);
-            margin-bottom: 15px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contentonly {
+    li {
+        line-height: 1.5;
+        margin-left: 40px;
+    }
+
+    hr {
+        margin-block: 10px;
+    }
+}
+
+footer {
+    background-color: #eee;
+
+    img {
+        width: 200px;
+    }
+
+    .foot {
+        background-color: var(--fifth-color);
+        text-align: center;
+        padding-block: 15px;
+
+        p {
+            color: #fff;
         }
     }
 }
+
+.floatwp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    i {
+        box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.1);
+        font-size: 35px;
+        padding: 5px;
+        border-radius: 100%;
+        background-color: #01BF01;
+        padding: 15px 18px;
+        color: var(--fourth-color);
+    }
+}
+
+
+
+
+
+
 
 .Habout {
     img {
         width: 100%;
         clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-        border-radius: 10px;
     }
 
     .column {
@@ -300,68 +397,3 @@ footer {
     border-block: 2px solid var(--primary-color);
 }
 
-header {
-    background-color: var(--fourth-color);
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9;
-
-    .row {
-        padding-block: 15px;
-        gap: 15px;
-    }
-
-    .logocol {
-        margin: auto 0 !important;
-        width: fit-content;
-
-        a {
-            line-height: 0;
-        }
-    }
-
-    img {
-        width: 175px;
-    }
-
-    #bars {
-        display: none;
-        margin: auto 0 !important;
-        background-color: var(--fourth-color);
-        padding: 12px 13px;
-        border-radius: 10px;
-        font-size: 22px;
-    }
-
-    nav {
-        flex: 1;
-        margin: auto 0;
-    }
-
-    ul {
-        display: flex;
-        justify-content: end;
-        gap: 10px;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-
-        a {
-            color: var(--fourth-color);
-            text-decoration: none;
-            border-bottom: 2px solid transparent;
-            padding: 2px 5px 5px 5px;
-        }
-    }
-
-    nav ul li a.active, a:hover {
-        color: var(--fourth-color) !important;
-        border-color: var(--fourth-color);
-    }
-}
-
-header.scrolled {
-    background-color: var(--fifth-color);
-}

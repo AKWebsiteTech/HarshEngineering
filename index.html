@@ -11,7 +11,7 @@
 
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
-    <!-- <link href="./css/responsive.css" rel="stylesheet"> -->
+    <link href="./css/responsive.css" rel="stylesheet">
     <link href="./fontawesome/css/all.css" rel="stylesheet">
     <link href="./fontawesome/css/all.min.css" rel="stylesheet">
 </head>
@@ -23,8 +23,9 @@
                 <div class="logocol">
                     <a href="/"><img src="./images/logo.jpeg" alt=""></a>
                 </div>
-                <nav>
-                    <ul>
+                <nav id="nav">
+                    <i class="fa-solid fa-xmark" id="off"></i>
+                    <ul class="d-flex">
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About Us</a></li>
                         <li><a href="/products">Our Products</a></li>
@@ -65,41 +66,62 @@
         </div>
     </div>
 
-    <div class="container experties">
+    <div class="container introrow">
         <div class="row">
+            <div class="column">
+                <div class="flex">
+                    <h2>Quality Commitment</h2>
+                    <hr>
+                </div>
+                <br>
+                <p>At Harsh Engineering, we are fully committed to quality in all aspects of our operations. Every applicator product and engineering component undergoes a comprehensive quality inspection to ensure our products meet the highest industry standards. We adhere to the highest manufacturing specifications and ensure that our products are free from defects and meet our clients’ quality expectations.</p>
+                <p>Our focus on quality enables us to produce products that satisfy our clients’ requirements, resulting in enhanced performance and customer satisfaction. Our quality policy enhances our ability to produce products that satisfy our clients’ needs while minimizing any production-related problems and defects.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container experties">
+        <div class="row grid grid1">
+            <div class="imgcol"></div>
             <div class="column">
                 <h2>Our Expertise</h2>
                 <p>As a professional manufacturing company, Harsh Engineering specializes in the production of:</p>
-                <div class="grid grid3">
-                    <div>
-                        <p><i class="fa-solid fa-bullseye"></i></p>
-                        <h3>Precision applicators</h3>
-                    </div>
-                    <div>
-                        <p><i class="fa-solid fa-sliders"></i></p>
-                        <h3>Applicator parts and accessories</h3>
-                    </div>
-                    <div>
-                        <p><i class="fa-solid fa-puzzle-piece"></i></p>
-                        <h3>Industrial engineering parts</h3>
-                    </div>
-                    <div>
-                        <p><i class="fa-solid fa-screwdriver-wrench"></i></p>
-                        <h3>Specific customized parts</h3>
-                    </div>
+                <br>
+                <br>
+                <div class="flex gap2">
+                    <p><i class="fa-solid fa-bullseye"></i></p>
+                    <h3>Precision applicators</h3>
                 </div>
+                <br>
+                <br>
+                <div class="flex gap2">
+                    <p><i class="fa-solid fa-sliders"></i></p>
+                    <h3>Applicator parts and accessories</h3>
+                </div>
+                <br>
+                <br>
+                <div class="flex gap2">
+                    <p><i class="fa-solid fa-puzzle-piece"></i></p>
+                    <h3>Industrial engineering parts</h3>
+                </div>
+                <br>
+                <br>
+                <div class="flex gap2">
+                    <p><i class="fa-solid fa-screwdriver-wrench"></i></p>
+                    <h3>Specific customized parts</h3>
+                </div>
+                <br>
+                <br>
                 <p>At Harsh Engineering, we manufacture products to size and shape and ensure that they are produced to the highest industry standards.</p>
             </div>
         </div>
     </div>
 
     <div class="container Habout">
-        <div class="row grid grid1">
+        <div class="row">
             <div class="column">
-                <img src="./images/CNC-turning-machine.jpg" alt="CNC Turning Machine">
-            </div>
-            <div class="column">
-                <h2>About Harsh Engineering</h2>
+                <p class="HE">Harsh Engineering</p>
+                <h2>About Us</h2>
                 <p>Harsh Engineering is your reliable manufacturing partner in the production of high-quality applicators & their components. We produce applicators & components for applicators using advanced technologies. Our products are manufactured to satisfy our clients’ needs. We have the necessary expertise and technical know-how to ensure that our products are produced meeting the highest quality standards.</p>
                 <br>
                 <p>Harsh Engineering takes pride in its professionalism and adherence to the highest industry standards in its manufacturing processes and operations. Our manufacturing processes are carefully planned and executed in a controlled environment to ensure quality products that are free from defects. At Harsh Engineering, we value your trust and confidence and will endeavor to deliver our products to you on time while upholding the highest quality standards.</p>
@@ -108,21 +130,13 @@
     </div>
 
     <div class="container reason">
-        <div class="row grid grid1">
+        <div class="row">
             <div class="column">
                 <h2>Reasons to choose Harsh Engineering</h2>
                 <br>
                 <hr>
                 <br>
                 <p>When looking for a reliable manufacturing partner in the production of precision applicators and engineering parts, there are several factors to consider. Harsh Engineering understands your needs and is committed to providing you with the best products in the industry.</p>
-            </div>
-            <div>
-                <h2>Quality commitment</h2>
-                <br>
-                <hr>
-                <br>
-                <p>At Harsh Engineering, we are fully committed to quality in all aspects of our operations. Every applicator product and engineering component undergoes a comprehensive quality inspection to ensure our products meet the highest industry standards. We adhere to the highest manufacturing specifications and ensure that our products are free from defects and meet our clients’ quality expectations.</p>
-                <p>Our focus on quality enables us to produce products that satisfy our clients’ requirements, resulting in enhanced performance and customer satisfaction. Our quality policy enhances our ability to produce products that satisfy our clients’ needs while minimizing any production-related problems and defects.</p>
             </div>
         </div>
     </div>
@@ -276,7 +290,7 @@
         <div class="container">
             <div class="row grid grid2">
                 <div class="column">
-                    <a href="/"><img src="./images/logo.png" alt=""></a>
+                    <a href="/"><img src="./images/logo.jpeg" alt=""></a>
                 </div>
                 <div class="column">
                     <h4>More Links</h4>
