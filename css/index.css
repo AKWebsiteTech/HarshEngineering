@@ -32,8 +32,7 @@ form {
 }
 
 header {
-    background-color: var(--fourth-color);
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -80,16 +79,26 @@ header {
         margin: 0;
 
         a {
-            color: var(--fifth-color);
+            color: var(--fourth-color);
             text-decoration: none;
             border-bottom: 2px solid transparent;
             padding: 2px 5px 5px 5px;
         }
     }
 
-    nav ul li a.active, a:hover {
+    nav ul li a.active,
+    a:hover {
         color: var(--third-color) !important;
         border-color: var(--third-color);
+    }
+}
+
+header.scrolled {
+    background-color: var(--fourth-color);
+    box-shadow: 0 0 3px 3px rgba(20, 20, 20, 0.1);
+
+    ul a {
+        color: var(--fifth-color);
     }
 }
 
@@ -98,6 +107,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 
     .intropara {
         font-size: 20px;
@@ -114,7 +124,7 @@ header {
 
     .flex {
         background-color: rgba(255, 255, 255, 0.2);
-        
+
         p {
             font-weight: 700;
             color: var(--fourth-color);
@@ -136,7 +146,7 @@ header {
 .HE {
     font-size: 18px;
     text-transform: uppercase;
-    color: var(--third-color);
+    color: var(--third-color) !important;
     letter-spacing: 5px;
     font-weight: 700;
 }
@@ -144,12 +154,6 @@ header {
 .introrow {
     .flex {
         gap: 10px;
-    }
-
-    hr {
-        flex: 1;
-        margin: auto 0;
-        border-color: var(--third-color);
     }
 }
 
@@ -167,8 +171,77 @@ header {
 
     i {
         font-size: 2em;
-        padding-right: 20px;
-        border-right: 2px solid;
+        padding: 10px 20px 10px 0;
+        border-right: 2px solid var(--third-color);
+        color: var(--primary-color);
+    }
+
+    h3 {
+        margin: auto 0;
+    }
+}
+
+.aboutus {
+    background-image: linear-gradient(to right, rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url(../images/turning-machine.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    h2,
+    p {
+        color: var(--fourth-color);
+    }
+}
+
+.process {
+    .column {
+        padding: 40px;
+        background-image: url(../images/Shiny-Overlay.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    .row {
+        padding-block: 0;
+        margin-top: -50px;
+    }
+
+    h2,
+    h3,
+    p {
+        color: var(--fourth-color);
+    }
+}
+
+hr {
+    flex: 1;
+    margin: auto 0;
+    border-color: var(--third-color);
+}
+
+.Serve {
+    background-image: linear-gradient(to right, rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(../images/Hexagon.svg), url(../images/Shiny-Overlay.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2,
+    h3,
+    p {
+        color: var(--fourth-color);
+    }
+
+    span {
+        color: var(--third-color);
+    }
+}
+
+.offers {
+    h2 {
+        width: fit-content;
     }
 }
 
@@ -259,26 +332,7 @@ footer {
     }
 }
 
-.reason {
-    background-image: linear-gradient(to right, rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url(../images/turning-machine.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
 
-    h2,
-    p {
-        color: var(--fourth-color);
-    }
-
-    hr {
-        border-color: var(--third-color);
-        width: 175px;
-        margin: auto;
-        border-radius: 10px;
-        border: 2px solid var(--third-color);
-    }
-}
 
 .offers {
 
@@ -370,25 +424,6 @@ footer {
     }
 }
 
-.Serve {
-    h3 {
-        flex: 1;
-        margin: auto;
-    }
-
-    .flex {
-        background: linear-gradient(-75deg, rgb(255, 99, 71, 0.3) 50%, rgb(1, 191, 1, 0.3) 50%);
-        padding: 20px;
-        text-align: center;
-        border-radius: 10px;
-    }
-
-    .flex:nth-child(2),
-    .flex:nth-child(3) {
-        background: linear-gradient(75deg, rgb(255, 99, 71, 0.3) 50%, rgb(1, 191, 1, 0.3) 50%);
-    }
-}
-
 .getintouch {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../images/Hexagon.svg);
     background-position: center;
@@ -396,4 +431,3 @@ footer {
     background-size: cover;
     border-block: 2px solid var(--primary-color);
 }
-
