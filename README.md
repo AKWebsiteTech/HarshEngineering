@@ -1,2 +1,2 @@
 # HarshEngineering
-Basically we deals in production of applicator &amp; its parts, deals in high precision &amp; quality work, &amp; main think is that we honor our commitment.
+Harsh Engineering is your reliable manufacturing partner in the production of high-quality applicators & their components. We produce applicators & components for applicators using advanced technologies. Our products are manufactured to satisfy our clients’ needs. We have the necessary expertise and technical know-how to ensure that our products are produced meeting the highest quality standards.
